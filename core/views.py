@@ -3,18 +3,13 @@
 from django.shortcuts import render
 
 def index(request):
-    texts = [
-        'Lorem ipsum dolor sit amet',
-        'consectetur adipiscing elit,',
-        'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        'Ut enim ad minim veniam,',
-        'quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-        'Excepteur sint occaecat cupidatat non proident,',
-        'sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    ]
-    context = {
-        'title': 'django e-commerce',
-        'texts': texts
-    }
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
+
+def contact(request):
+    return render(request, "contact.html")
+
+def product(request):
+    return render(request, "product.html")
+
+def product_list(request):
+    return render(request, "product_list.html")
