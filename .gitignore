@@ -136,5 +136,4 @@ crashlytics-build.properties
 fabric.properties
 
 .idea/
-catalog/
 *.sqlite3
